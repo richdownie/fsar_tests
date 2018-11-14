@@ -7,5 +7,6 @@ Then /I verify widgets display on the page/ do
 end
 
 Then /I verify the widgets table has "(.*)" rows/ do |row_count|
-  puts @browser.find_elements(css: '#widgets_table tr').count - 1
-end 
+  puts rows = @browser.find_elements(css: '#widgets_table tr').count - 1
+  rows.should == row_count.to_i
+end
