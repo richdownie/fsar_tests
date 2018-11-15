@@ -1,4 +1,5 @@
 require 'selenium-webdriver'
+require 'webdrivers'
 require 'rspec'
 require_relative '../page_objects/widgets_index_page'
 
