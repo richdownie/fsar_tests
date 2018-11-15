@@ -1,5 +1,5 @@
 Given /I am on the fsar widgets page/ do
-  @browser.get("http://fullstackautomationwithruby.com/widgets")
+  @widgets_index.visit
 end
 
 Then /I verify widgets display on the page/ do
