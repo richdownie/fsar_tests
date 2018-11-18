@@ -8,5 +8,5 @@ end
 
 Then /I verify the widgets table has "(.*)" rows/ do |row_count|
   puts rows = @browser.find_elements(css: '#widgets_table tr').count - 1
-  rows.should == row_count.to_i
+  expect(rows).to eql(row_count.to_i)
 end
