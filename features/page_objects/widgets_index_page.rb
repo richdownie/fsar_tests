@@ -5,7 +5,7 @@ class WidgetsIndex
   end
 
   def visit
-    @browser.get("http://fullstackautomationwithruby.com/widgets")
+    @browser.get("https://fullstackautomationwithruby.com/widgets")
   end
 
 end
